@@ -4,90 +4,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>所属ライバー募集 | LiBee</title>
-  <meta name="description" content="LiBee の所属ライバー募集ページ。応募条件、サポート内容、応募フォーム。">
+  <meta name="description" content="LiBee（ライビー）の所属ライバー募集。応募条件・サポート内容・応募フォーム。">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
-<header>
+<header class="site-header">
   <div class="container header-inner">
-    <div class="logo">
-      <div class="logo-mark" aria-hidden="true"></div>
-      <a href="index.html" aria-label="LiBee ホーム">LiBee🐝</a>
-    </div>
-    <nav aria-label="メイン">
+    <a class="brand" href="index.html">
+      <img src="assets/libee_logo.png" alt="LiBee ロゴ" class="logo">
+      <span class="brand-text">LiBee</span>
+    </a>
+    <nav class="main-nav" aria-label="メイン">
       <ul>
-        <li><a href="index.html" >ホーム</a></li>
-        <li><a href="about.html" >私たちについて</a></li>
-        <li><a href="recruit.html" class="active">所属ライバー募集</a></li>
-        <li><a href="contact.html" >お問い合わせ</a></li>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">私たちについて</a></li>
+        <li><a href="recruit.html">所属ライバー募集</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
   </div>
 </header>
+<main class="container">
 
-<main>
-<section class="section container">
+<section>
   <h1>所属ライバー募集</h1>
-  <p class="lead">LiBee では、新規・経験者ともに募集しています。まずはカジュアル面談で、現在地と目標をすり合わせましょう。</p>
-
-  <div class="notice">
-    <p><strong>面談の流れ：</strong> お申し込み → 日程調整 → オンライン30分程度 → 合否/ご案内</p>
-  </div>
-
-  <section class="section">
-    <h2>募集要件</h2>
-    <ul class="list">
-      <li>日本在住・18歳以上</li>
-      <li>Pococha などライブ配信に前向きに取り組める方</li>
-      <li>ガイドライン・コミュニティルールを守れる方</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>サポート内容（例）</h2>
-    <ul class="list">
-      <li>配信スケジュール・戦略の個別設計</li>
-      <li>毎週の数値レビューと改善提案</li>
-      <li>イベント時の施策設計（生誕祭、周年、コラボ など）</li>
-      <li>クリエイティブ制作サポート（画像/音源/テキスト）</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>応募フォーム</h2>
-    <p class="meta">以下のフォームよりご連絡ください。外部フォーム（Google フォーム等）への遷移でもOKです。</p>
-    <form class="form" action="mailto:cheeva999@gmail.com" method="post" enctype="text/plain">
-      <label>お名前<input name="name" required placeholder="例）千葉 泰久"></label>
-      <label>メールアドレス<input type="email" name="email" required placeholder="example@example.com"></label>
-      <label>年齢<select name="age"><option>18-24</option><option>25-29</option><option>30-39</option><option>40+</option></select></label>
-      <label>配信経験<select name="exp"><option>未経験</option><option>半年未満</option><option>半年〜1年</option><option>1年以上</option></select></label>
-      <label>SNSリンク（任意）<input name="sns" placeholder="Instagram / X / TikTok などのURL"></label>
-      <label>ひとこと（任意）<textarea name="note" rows="4" placeholder="目標や希望など自由にお書きください"></textarea></label>
-      <button class="btn btn-primary" type="submit">送信する</button>
-    </form>
-    <p class="meta">※ メールソフトが起動する <code>mailto:</code> 方式です。後で外部フォームに差し替え可能。</p>
-  </section>
-</section>
-</main>
-
-<footer>
-  <div class="container">
-    <div class="grid">
-      <div>
-        <div class="logo"><div class="logo-mark"></div>LiBee🐝</div>
-        <p class="meta">池袋を拠点に活動するライブ配信エージェンシー。Pococha を中心に、配信者の活動設計・成長支援・企画運営を行います。</p>
-      </div>
-      <div>
-        <p class="meta">運営：LiBee（リビー）<br>所在地：東京都豊島区池袋<br>メール：<a href="mailto:cheeva999@gmail.com">cheeva999@gmail.com</a></p>
-      </div>
-      <div>
-        <p class="meta"><a href="privacy.html">プライバシーポリシー</a></p>
-      </div>
+  <p>応募条件やサポート内容、応募フォームへの導線をご案内します。</p>
+  <div class="cards">
+    <div class="card">
+      <h2>応募条件</h2>
+      <ul>
+        <li>18歳以上／規約順守ができる方</li>
+        <li>Pococha経験者歓迎（未経験も可）</li>
+        <li>継続して配信できる環境があること</li>
+      </ul>
     </div>
-    <p class="meta" style="margin-top:1rem;">© 2025 LiBee. All rights reserved.</p>
+    <div class="card">
+      <h2>サポート</h2>
+      <ul>
+        <li>S帯戦略・日次の数値レビュー</li>
+        <li>プラ2計画／ナイト攻略の設計</li>
+        <li>ファンコミュ・グッズ・イベント支援</li>
+      </ul>
+    </div>
   </div>
-</footer>
+  <div class="cta">
+    <a class="btn primary" href="https://form.run/@liver-form" target="_blank" rel="noopener">ポコチャ利用登録フォームへ</a>
+    <a class="btn primary" href="https://form.run/@register-form" target="_blank" rel="noopener">所属登録フォームへ</a>
+  </div>
+</section>
 
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="footer-brand">
+        <img src="assets/libee_logo.png" alt="LiBee ロゴ" class="logo small">
+        <strong>LiBee</strong>（ライビー）
+      </div>
+      <p>池袋を拠点に活動するライブ配信エージェンシー。<br>
+      Pococha を中心に、目標設計・配信設計・収益化・コミュニティ運営までをワンストップで支援します。</p>
+      <p class="meta">所在地：東京都豊島区池袋　｜　メール：<a href="mailto:cheeva999@gmail.com">cheeva999@gmail.com</a></p>
+    </div>
+    <div class="footer-right">
+      <a href="privacy.html">プライバシー</a>
+    </div>
+  </div>
+  <div class="copyright">© 2025 LiBee. All rights reserved.</div>
+</footer>
 </body>
 </html>
