@@ -24,11 +24,14 @@ a:hover{opacity:.85}
 .header-inner{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:12px 0;}
 .logo{height:40px}
 .logo.small{height:28px}
-.kana{color:var(--muted);}
 
 .main-nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0;}
-.main-nav a{color:var(--text); padding:8px 6px; border-bottom:2px solid transparent}
-.main-nav a:hover{border-color:var(--yellow)}
+.main-nav a{position:relative; color:var(--text); text-decoration:none; padding:10px 12px; border-radius:999px; transition:background .15s,color .15s; cursor:pointer;}
+.main-nav a::after{content:""; position:absolute; left:12px; right:12px; bottom:6px; height:2px; background:var(--yellow); opacity:.35; transform:scaleX(.8);}
+.main-nav a:hover,.main-nav a:focus{color:#000; background:#fff8d6; outline:none;}
+.main-nav a:hover::after,.main-nav a:focus::after{opacity:1; height:3px; transform:scaleX(1);}
+.main-nav a.current{color:#fff; background:var(--yellow);}
+.main-nav a.current::after{display:none;}
 
 .hero{padding:48px 0 24px}
 h1{font-size:2rem; margin:0 0 12px; color:var(--yellow-strong)}
